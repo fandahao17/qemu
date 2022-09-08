@@ -25,12 +25,14 @@ With all these features, we achieved our goal of making QEMU NVMe emulation perf
 |  **nvme+polling**  |  123  |  165  |  189   |  191   |
 | virtio-blk+polling |  88   |  212  |  210   |  213   |
 
+My work is presented at KVM Forum 2022 ([pdf](https://static.sched.com/hosted_files/kvmforum2022/56/NVMe-Jinhao.pdf)). I've been told that these optimizations have been utilized at multiple orginizations.
+
 ## Merged patches
 
-1. [hw/nvme: Add shadow doorbell buffer support](https://patchew.org/QEMU/20220616123408.3306055-1-fanjinhao21s@ict.ac.cn/)
-2. [hw/nvme: Use ioeventfd to handle doorbell updates](https://patchew.org/QEMU/20220705142403.101539-1-fanjinhao21s@ict.ac.cn/)
-3. [hw/nvme: Add helper functions for qid-db conversion](https://patchew.org/QEMU/20220803015836.3590335-1-fanjinhao21s@ict.ac.cn/)
-4. [block/io_uring: add missing include file](https://patchew.org/QEMU/20220721065645.577404-1-fanjinhao21s@ict.ac.cn/)
+1. [hw/nvme: Add shadow doorbell buffer support](https://patchew.org/QEMU/20220616123408.3306055-1-fanjinhao21s@ict.ac.cn/) (3f7fe8d)
+2. [hw/nvme: Use ioeventfd to handle doorbell updates](https://patchew.org/QEMU/20220705142403.101539-1-fanjinhao21s@ict.ac.cn/) (2e53b0b)
+3. [hw/nvme: Add helper functions for qid-db conversion](https://patchew.org/QEMU/20220803015836.3590335-1-fanjinhao21s@ict.ac.cn/) (387350d)
+4. [block/io_uring: add missing include file](https://patchew.org/QEMU/20220721065645.577404-1-fanjinhao21s@ict.ac.cn/) (77e3f03)
 
 ## Not yet merged patches
 
